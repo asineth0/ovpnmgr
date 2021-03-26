@@ -27,7 +27,7 @@ if [ ! -d /etc/easy-rsa/pki ]; then
 	pushd /etc/easy-rsa >/dev/null
 
 	info 'Configuring EasyRSA'
-	echo 'set_var EASYRSA_ALGO ed' >> vars
+	echo 'set_var EASYRSA_ALGO ed' > vars
 	echo 'set_var EASYRSA_CURVE ed25519' >> vars
 	echo 'set_var EASYRSA_DIGEST sha512' >> vars
 
